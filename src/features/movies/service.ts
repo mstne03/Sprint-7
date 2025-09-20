@@ -12,7 +12,6 @@ export interface Paged<T> {
 export type QueryParams = Record<string, string | number | boolean | undefined>;
 
 export interface DataService {
-
   getMovies(page: number): Promise<MoviesResponse>;
   getMovieById(id: number): Promise<Movie>;
   getMovieCredits(movieId: number): Promise<MovieCredits>;

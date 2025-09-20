@@ -28,7 +28,7 @@ export const http = axios.create({
     baseURL: ENV.TMDB_URL,
     headers: {
         accept: 'application/json',
-        Authorization: process.env.AUTHORIZATION ?? 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NDMyZThlM2MzMzY1ZTEzNzhjZTcxYzQ3MWE3MjFmNSIsIm5iZiI6MTc1ODAyMTAzNi4zNTEsInN1YiI6IjY4Yzk0NWFjNWFlMWYzM2E1M2RjZDJmNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.N2ck0gZdziNlGYrpWRez4GfpSNfMJTga7mIYIBcXG54'
+        Authorization: import.meta.env.AUTHORIZATION ?? 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NDMyZThlM2MzMzY1ZTEzNzhjZTcxYzQ3MWE3MjFmNSIsIm5iZiI6MTc1ODAyMTAzNi4zNTEsInN1YiI6IjY4Yzk0NWFjNWFlMWYzM2E1M2RjZDJmNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.N2ck0gZdziNlGYrpWRez4GfpSNfMJTga7mIYIBcXG54'
     },
 });
 
