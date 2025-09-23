@@ -11,7 +11,7 @@ const HeroBackground = ({ children }: PropsWithChildren) => {
     }, [trendingDay]);
 
     return (
-        <main
+        <div
             className="w-[100vw] h-[100vh] fixed -z-1 top-0 left-0"
             style={{
                 backgroundImage: heroBackDrop
@@ -22,7 +22,7 @@ const HeroBackground = ({ children }: PropsWithChildren) => {
             }}
         >
             {children}
-        </main>
+        </div>
     )
 }
 

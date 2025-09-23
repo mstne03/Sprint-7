@@ -13,10 +13,10 @@ const Cast = ({ movieId }: { movieId: number }) => {
 
     return (
         <>
-            <h2>
+            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-tl from-green-800 to-white text-center m-5">
                 Movie Cast
             </h2>
-            <div>
+            <div className="flex flex-row gap-5 m-6 p-4 overflow-x-auto">
                 {cast.slice(0, 16).map((actor) => (
                     <ActorCard key={actor.id} actor={actor} />
                 ))}

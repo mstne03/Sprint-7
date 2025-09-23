@@ -8,12 +8,14 @@ import PersonDetail from "@/pages/PersonDetail/PersonDetail";
 import LoginPage from "@/pages/LoginPage/LoginPage";      
 import RegisterPage from "@/pages/RegisterPage/RegisterPage"; 
 import { ProtectedRoute } from "@/router/ProtectedRoute";
+import HeroBackground from "@/components/HeroBackground/HeroBackground";
 
 
 export const AppRouter = () => {
   return (
     <>
       <Header />
+      <HeroBackground />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route element={<ProtectedRoute />}>

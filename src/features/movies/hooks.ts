@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useDataService } from '@/providers/ServiceProviders'
 import type { MoviesResponse, Movie } from './types'
 
-export const userMovies = (page: number) => {
+export const useMovies = (page: number) => {
     const svc = useDataService();
     return useQuery<MoviesResponse>({
         queryKey: ["movies", page],

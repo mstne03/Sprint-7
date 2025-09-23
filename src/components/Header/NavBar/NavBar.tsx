@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useAuthUserQuery, useLogoutMutation } from "@/query/authQueries"
 import  { useState } from 'react'
+import popMovies from '@/assets/popMovies.svg'
 
 const NavBar = () => {
     const { data: user } = useAuthUserQuery();
@@ -11,11 +12,14 @@ const NavBar = () => {
 
     return (
         <nav className="flex justify-between my-5">
-            <div className="flex">
+            <div className="flex items-center">
                 <span className="">
                     <Link to="/">
-                        <img src="" alt="" />
-                        <p className="hidden sm:block font-bold text-inherit">LOGO</p>
+                        <img 
+                            className="max-w-[80px] rounded-4xl transition-all ease-in-out hover:scale-[1.2] duration-300"
+                            src={popMovies} 
+                            alt="PopMoviesLogo" 
+                        />
                     </Link>
                 </span>
                 <nav className="hidden mx-10 sm:flex gap-5">
@@ -65,7 +69,7 @@ const NavBar = () => {
                         </button>
                         {openProfileMenu && (
                             <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
-                                <div className="flex flex-col gap-2 p-3">
+                                <div className="flex flex-col gap-2 p-3 text-black">
                                     <Link
                                         className="hover:text-blue-600"
                                         to="/"
